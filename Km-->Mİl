@@ -1,0 +1,6 @@
+Mesafe = float(input("Mesafe Uzunluğu / km \t\t:  "))
+
+print("Mil Cinsinden Mesafe Uzunluğu\t:  ",float(Mesafe/621371192),sep="")
+
+
+input()
