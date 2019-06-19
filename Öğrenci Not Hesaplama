@@ -1,0 +1,16 @@
+
+Dosya = open("ogrenciNotHesaplama" , "w")
+
+ad_soyad = input("Öğrenci Adı ve Soyadı\t:  ")
+
+vize = int(input("Vize Notu\t\t:  "))
+final = int(input("Final Notu\t\t:  "))
+kacırılan_ders_sayısı = int(input("Girilmeyen Ders Sayısı\t:  "))
+
+ders_takip = int(100-kacırılan_ders_sayısı*5)
+
+Sınav_ve_ders_takip_puanı = (100)
+
+yıl_sonu_notu = print("Yıl Sonu Notu\t\t: ", ((vize*30/100) + (final*50/100) +
+                                              (ders_takip*20/100)))
+Dosya.close()
