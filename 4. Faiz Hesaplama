@@ -1,0 +1,28 @@
+dosya = ("faizhesaplama","w")
+
+
+anapara= float(input("Ana Para / TL (Ör: 12500)\t:   "))
+faizsuresi = int(input("Faiz Suresi / Yıl (Ör: 10)\t:   "))
+faizorani = float(input("Faiz Oranı %  (Ör: 0.99)\t:   "))
+
+yıllıkfaizformulu = float(anapara*faizsuresi*faizorani/100)
+aylikfaizformulu = float((anapara/100)*(faizorani/12)*(faizsuresi*12))
+gunlukfaizformulu = float((anapara/100)*(faizorani/365)*(faizsuresi*365))
+
+toplampara = float(anapara+yıllıkfaizformulu)
+
+print("Toplam Yıllık Faiz Tutarı\t:   ", yıllıkfaizformulu, sep="")
+
+
+
+
+print("Aylık Ortalama Faiz Tutarı\t:   ",
+                         aylikfaizformulu, sep="")
+
+print("Günlük Ortalama Faiz Tutarı\t:   ",
+                         gunlukfaizformulu, sep="")
+
+print("Toplam Para Mİktarı\t\t:   ",
+                         toplampara, sep="")
+
+dosya.close()
