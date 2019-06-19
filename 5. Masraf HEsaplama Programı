@@ -1,0 +1,20 @@
+dosya = ("aylıkmasraf","w")
+
+aylikgelir = float(input("Aylık Gelirinizi Giriniz! (ör: 3250)\t\t: "))
+
+mutfak = float(input("Aylık Mutfak Giderinizi Giriniz! (ör: 200)\t: "))
+
+egitim = float(input("Aylık Eğitim Giderinizi Giriniz! (ör: 200)\t: "))
+
+giyim = float(input("Aylık Giyim  Giderinizi Giriniz! (ör: 200)\t: "))
+
+ulasim = float(input("Aylık Ulaşım Giderinizi Giriniz! (ör: 200)\t: "))
+
+toplammasraf = float((mutfak)+(egitim)+(giyim)+(ulasim))
+
+toplammasraf1 = (print("Aylık Toplam Masrafınız\t\t\t\t: ",float((mutfak)+(egitim)+(giyim)+(ulasim)),sep=""))
+
+print("Masraflarınızın Aylık Gelire Oranı %\t\t: ",(toplammasraf*100/aylikgelir), sep="")
+
+
+dosya.close()
